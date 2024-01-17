@@ -1,0 +1,501 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	width: 560px;
+	height: 1080px;
+	position: relative;
+}
+
+body {
+	background-image: url(./img/phone_background.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+/* 로그인화면 */
+.container__admin {
+}
+.admin__center {
+	padding: 10rem 3rem 5rem 2rem;
+	background-clip: content-box;
+	width: 480px;
+	height: 784px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.admin__flexWrap {
+	display: flex;
+	margin-bottom: 1rem;
+}
+
+.admin__textWrap {
+	width: 7rem;
+	padding-right: 1rem;
+	font-size: 1.5rem;
+	text-align: right;
+}
+
+.admin__auth {
+	width: 13rem;
+	font-size: 1.5rem;
+	border: none;
+	border-bottom: 1px solid #000;
+	outline: none;
+	text-align: center;
+}
+
+.admin__buttonCenter {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+#admin__enter,
+#admin__join {
+	border-radius: 10px;
+	font-size: 1.3rem;
+	width: 7rem;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	text-align: center;
+}
+
+#admin__enter:hover,
+#admin__join:hover {
+	background: #79a0ff;
+	color: white;
+}
+
+/* 회원가입화면 */
+.container__join {
+	background: #fff !important;
+	background-clip: content-box !important;
+}
+
+.join__center {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.join__top {
+	margin: -18rem 0 13rem 0;
+	font-size: 3rem;
+}
+
+.join__flexWrap {
+	display: flex;
+}
+
+.join__textWrap {
+	text-align: right;
+	font-size: 1.3rem;
+	padding-right: 1rem;
+}
+
+.join__auth {
+	width: 11rem;
+	font-size: 1.3rem;
+	border: none;
+	border-bottom: 1px solid #000;
+	outline: none;
+	text-align: center;
+}
+
+#join__enter,
+#join__outer {
+	border-radius: 10px;
+	margin-top: 1rem;
+	width: 7rem;
+	font-size: 1.5rem;
+	border: none;
+}
+
+#join__enter:hover,
+#join__outer:hover {
+	background: #79a0ff;
+	color: white;
+	cursor: pointer;
+}
+
+/* alert box */
+.alert__box {
+	border: 1px solid #000;
+	background: #fff;
+	width: 23rem;
+	height: 9rem;
+	position: absolute;
+	top: 28rem;
+	left: 5.7rem;
+	border-radius: 10px;
+	display: none;
+}
+
+.alert__box-textWrap {
+	display: flex;
+	justify-content: center;
+}
+
+.alert__box-text {
+	font-size: 1.5rem;
+	line-height: 7rem;
+}
+
+.alert__box-check {
+	background: #79a0ff;
+	color: white;
+	font-size: 1.47rem;
+	text-align: center;
+	border-top: 1px solid #000;
+	border-radius: 0 0 10px 10px;
+	cursor: pointer;
+}
+
+/* 메인화면 */
+.container__main {
+	background: #79a0ff !important;
+	background-clip: content-box !important;
+	position: relative;
+	height: 100%;
+}
+
+.deposit__image {
+	/*입금알림 이미지*/
+	position: absolute;
+	width: 83%;
+	display: none;
+}
+
+.main__middle {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.main__flexWrap {
+	display: flex;
+	width: 80%;
+	height: 90%;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: auto;
+}
+
+.main__flexTop {
+	display: flex;
+}
+
+.main__flexBottom {
+	display: flex;
+	justify-content: space-between;
+	background: #e5eff9ad;
+	outline: 15px solid #e5eff9ad;
+	border-radius: 20px;
+}
+
+.common__mainBtn {
+	border-radius: 10px;
+	width: 5rem;
+	height: 5rem;
+}
+
+.common__mainBtnWrap {
+	position: relative;
+}
+
+.new__mainBtn {
+	position: absolute;
+	width: 20px;
+	right: -3px;
+	top: -3px;
+}
+
+/* 전화기록 */
+.container__phoneRecord {
+	/* display: block; */
+}
+
+.phoneRecord__imgWrap {
+	width: 100%;
+	height: 784px;
+	position: relative;
+}
+
+.phoneRecord__btnIcon {
+	width: 100%;
+	height: 784px;
+	/* height: 7rem; */
+}
+
+.phoneRecord__clickArea,
+.message__clickArea {
+	position: absolute;
+	width: 100%;
+	height: 7rem;
+	cursor: pointer;
+	top: 0px;
+}
+
+/* 통화화면 */
+.container__call {
+	/* display: block; */
+}
+
+.call__flexWrap {
+	margin-top: 6rem;
+}
+
+.call__btnIcon {
+	color: white;
+	height: 4rem;
+	line-height: 4rem;
+	text-align: center;
+	font-size: 3rem;
+}
+
+.call__flexMiddle {
+	margin-top: 8rem;
+	display: flex;
+	width: 100%;
+	justify-content: space-evenly;
+}
+
+.call__btnSelect {
+	cursor: pointer;
+	width: 100%;
+	/* margin: 0 0.1rem; */
+	height: 12rem;
+}
+
+.call__flexBottom {
+	margin-top: 8rem;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.call__btnEnd {
+	background-color: coral;
+	color: white;
+	border: 1px solid black;
+	width: 4rem;
+	height: 4rem;
+	line-height: 4rem;
+	text-align: center;
+}
+
+/* 카톡화면 */
+.container__katalk {
+	/* display: block; */
+}
+
+.katalk__click,
+.message__click {
+	position: absolute;
+	top: 0;
+	width: 480px;
+	height: 6.5rem;
+	cursor: pointer;
+	display: none;
+}
+
+/* 카톡대화방화면 */
+.container__katalk-conversation {
+	background: rgb(234, 247, 255) !important;
+	background-clip: content-box !important;
+}
+
+.katalk__flexWrap {
+	position: relative;
+	height: 784px;
+	padding: 2rem 0;
+}
+
+.katalk__conversation {
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+.katalk__flexMiddle {
+	position: absolute;
+	bottom: 17rem;
+	display: flex;
+	width: 100%;
+	justify-content: space-evenly;
+}
+
+.katalk__btnSelect {
+	cursor: pointer;
+	width: 100%;
+	margin: 0 0.1rem;
+	height: 12rem;
+	text-align: center;
+}
+
+/* 메세지화면 */
+.container__message {
+	/* display: block; */
+}
+
+.message__btnIcon {
+	background-color: coral;
+	color: white;
+	border: 1px solid black;
+	height: 4rem;
+	line-height: 4rem;
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+.message__flexMiddle {
+	margin-top: 8rem;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	visibility: hidden; /*일단 숨겨놓음*/
+}
+
+.message__btnSelect {
+	background-color: coral;
+	color: white;
+	border: 1px solid black;
+	width: 100%;
+	margin: 0 0.1rem;
+	height: 12rem;
+	line-height: 12rem;
+	text-align: center;
+}
+
+.message__flexBottom {
+	margin-top: 8rem;
+	display: flex;
+	justify-content: flex-end;
+}
+
+/* 계좌화면 */
+.container__account {
+	background: #fff !important;
+	background-clip: content-box !important;
+	/* display: block; */
+}
+.account__info {
+	background-color: rgb(240, 207, 90);
+	text-align: center;
+	font-size: 2rem;
+	/* line-height: 22rem; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+}
+
+.account__infoWrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 30%;
+}
+
+.account__btnIcon {
+	background-color: rgb(230, 228, 227);
+	border-radius: 20px;
+	width: 20rem;
+	height: 4.5rem;
+	line-height: 4.5rem;
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.account__flexMiddle {
+	margin-top: 4rem;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.account__Mid {
+	margin-top: 0.5rem;
+}
+
+.account__btnSelect {
+	background-color: coral;
+	color: white;
+	border: 1px solid black;
+	width: 100%;
+	margin: 0 0.1rem;
+	height: 12rem;
+	line-height: 12rem;
+	text-align: center;
+}
+
+/* .account__flexBottom {
+	margin-top: 8rem;
+	display: flex;
+	justify-content: flex-end;
+} */
+
+/* 뒤로버튼 */
+.common__btnEnd {
+	cursor: pointer;
+	position: absolute;
+	bottom: 13rem;
+	right: 4rem;
+	width: 4rem;
+	height: 4rem;
+	display: none;
+	filter: invert();
+}
+
+.container {
+	display: none;
+	padding: 10rem 3rem 5rem 2rem;
+	background: #000;
+	background-clip: content-box;
+	height: 49rem;
+}
+
+/* 경고화면 */
+.warning__wrap,
+.after_katalk__warp,
+.after_message__warp {
+	width: 480px;
+	height: 784px;
+	position: relative;
+}
+
+.img__warning,
+.img__katalk,
+.img__message {
+	width: 100%;
+	height: 784px;
+}
+.btn__mainBack {
+	position: absolute;
+	width: 9.5rem;
+	height: 3rem;
+	top: 1.3rem;
+	left: 1.3rem;
+	cursor: pointer;
+	display: none;
+}
+
+.btn__moveLink {
+	position: absolute;
+	width: 65%;
+	height: 2rem;
+	top: 23rem;
+	left: 5rem;
+	cursor: pointer;
+	display: none;
+}
