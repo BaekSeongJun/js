@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="inter.js" defer></script>
+	</head>
+	<body>
+		<!-- 로그인화면 -->
+		<container class="container__admin">
+			<div class="admin__center">
+				<div class="admin__buttonFlex">
+					<div class="admin__flexWrap">
+						<div class="admin__textWrap">
+							<div>이름:</div>
+							<div>비밀번호:</div>
+						</div>
+						<div>
+							<div>
+								<input
+									class="admin__auth name2"
+									type="text"
+									autocomplete="off"
+								/>
+							</div>
+							<div>
+								<input
+									class="admin__auth password2"
+									type="text"
+									autocomplete="off"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="admin__buttonCenter">
+						<button id="admin__join">회원가입</button>
+						<bu인tton id="admin__enter" onclick="signin()">확인</bu인tton>
+					</div>
+				</div>
+			</div>
+		</container>
+
+		<!-- 회원가입 화면 -->
+		<container class="container container__join">
+			<div class="join__center">
+				<div class="join__top">회원가입</div>
+				<div class="join__flexWrap">
+					<div class="join__textWrap">
+						<div>이름:</div>
+						<div>비밀번호:</div>
+						<div>생년월일: </div>
+						<div>주소: </div>
+					</div>
+					<div>
+						<div>
+							<input
+								class="join__auth name"
+								type="text"
+								autocomplete="off"
+							/>
+						</div>
+						<div>
+							<input
+								class="join__auth password"
+								type="text"
+								autocomplete="off"
+							/>
+						</div>
+						<div>
+							<input
+								class="join__auth date"
+								type="text"
+								autocomplete="off"
+							/>
+						</div>
+						<div>
+							<input
+								class="join__auth address"
+								type="text"
+								autocomplete="off"
+							/>
+						</div>
+					</div>
+				</div>
+				<div>
+					<button id="join__outer">나가기</button>
+					<button id="join__enter" onclick='signup()'>확인</button>
+				</div>
+			</div>
+		</container>
+
+		<!-- alert 창 -->
+		<div class="alert__box">
+			<div class="alert__box-textWrap">
+				<span class="alert__box-text"></span>
+			</div>
+			<div class="alert__box-check">확인</div>
+		</div>
+
+		<!-- 메인화면 -->
+		<container class="container container__main">
+			<div class="main__depositWrap">
+				<img class="deposit__image" src="./img/deposit.png" alt="" />
+			</div>
+			<div class="main__middle">
+				<div class="main__flexWrap">
+					<div class="main__flexTop">
+						<div>
+							<img
+								class="common__mainBtn"
+								src="./img/account_icon.png"
+								alt=""
+							/>
+						</div>
+					</div>
+					<div class="main__flexBottom">
+						<div class="common__mainBtnWrap">
+							<img class="new__mainBtn" src="./img/new.png" alt="" />
+							<img class="common__mainBtn" src="./img/call__icon.png" alt="" />
+						</div>
+						<div class="common__mainBtnWrap">
+							<img
+								class="common__mainBtn"
+								src="./img/message_icon.png"
+								alt=""
+							/>
+						</div>
+						<div class="common__mainBtnWrap">
+							<img class="common__mainBtn" src="./img/search_icon.png" alt="" />
+						</div>
+						<div class="common__mainBtnWrap">
+							<img class="common__mainBtn" src="./img/kakao_icon.png" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</container>
+
+		<!-- 전화기록 -->
+		<container class="container container__phoneRecord">
+			<div class="phoneRecord__wrap">
+				<div class="phoneRecord__imgWrap">
+					<img
+						class="phoneRecord__btnIcon"
+						src="./img/missed_call_img.png"
+						alt=""
+					/>
+					<div class="phoneRecord__clickArea"></div>
+				</div>
+			</div>
+		</container>
+
+		<!-- 통화화면 -->
+		<container class="container container__call">
+			<audio id="tts1" class="tts__sound">
+				<source src="./sound/TTS-_1_.mp3" type="audio/mp3" />
+			</audio>
+			<audio id="tts2" class="tts__sound">
+				<source src="./sound/TTS-_2_.mp3" type="audio/mp3" />
+			</audio>
+			<audio id="tts3" class="tts__sound">
+				<source src="./sound/TTS-_3_.mp3" type="audio/mp3" />
+			</audio>
+			<div class="call__flexWrap">
+				<div class="call__flexTop">
+					<div class="call__btnIcon">02-2587-****</div>
+				</div>
+				<div class="call__flexMiddle">
+					<div>
+						<img
+							class="call__btnSelect select1"
+							src="./select-box/1-1.png"
+							alt=""
+						/>
+					</div>
+					<div>
+						<img
+							class="call__btnSelect select2"
+							src="./select-box/1-2.png"
+							alt=""
+						/>
+					</div>
+				</div>
+			</div>
+		</container>
+
+		<!-- 카톡메인화면 -->
+		<container class="container container__katalk">
+			<div class="after_katalk__warp">
+				<img class="img__katalk" src="./img/katalk_img.png" alt="" />
+				<div class="katalk__click"></div>
+			</div>
+		</container>
+
+		<!-- 카톡대화방화면 -->
+		<container class="container container__katalk-conversation">
+			<div class="katalk__flexWrap">
+				<div class="katalk__flexTop">
+					<div>
+						<img
+							class="katalk__conversation"
+							src="./katalk_select-box/katalk1.png"
+							alt=""
+						/>
+					</div>
+				</div>
+				<div class="katalk__flexMiddle">
+					<div>
+						<img
+							class="katalk__btnSelect katalk__select1"
+							src="./katalk_select-box/1-1.png"
+							alt=""
+						/>
+					</div>
+					<div>
+						<img
+							class="katalk__btnSelect katalk__select2"
+							src="./katalk_select-box/1-2.png"
+							alt=""
+						/>
+					</div>
+				</div>
+			</div>
+		</container>
+
+		<!-- 메세지화면 -->
+		<container class="container container__message">
+			<div class="after_message__warp">
+				<img class="img__message" src="./img/message_img.png" alt="" />
+				<div class="message__clickArea"></div>
+			</div>
+		</container>
+
+		<!-- 계좌화면 -->
+		<container class="container container__account">
+			<div class="account__flexWrap">
+				<div class="account__flexTop">
+					<div class="account__info">
+						<div class="account__infoWrap">
+							<span class="account__name">이름</span>
+							<span>잔액: <span class="account__amount">5000000</span>원</span>
+						</div>
+					</div>
+					<div>
+						<div style="display: flex; align-items: center; justify-content: center; height: 500px">
+							<input class="admin__auth password3" type="text">
+							<button onclick="changePassword()" style="outline: none; border: none; padding: 4px; border-radius: 10px">비밀번호 변경</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</container>
+
+		<!-- 경고화면 -->
+		<container class="container container__warning">
+			<div class="warning__wrap">
+				<img class="img__warning" src="./img/warning__screen.png" alt="" />
+				<div class="btn__mainBack"></div>
+				<div class="btn__moveLink"></div>
+			</div>
+		</container>
+
+		<!-- 뒤로버튼 -->
+		<div>
+			<img
+				class="common__btnEnd common__btnEnd-toggle-icon"
+				src="./img/back_icon.png"
+				alt=""
+			/>
+		</div>
+	</body>
+</html>
